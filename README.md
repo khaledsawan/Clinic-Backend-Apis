@@ -1,64 +1,29 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Clinic Management System
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+The Clinic Management System is a web application that allows clinics to manage their appointments, patients, and departments efficiently. It provides a user-friendly interface for clinic staff to perform various tasks such as scheduling appointments, managing patient records, and organizing different departments.
 
-## About Laravel
+## Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Appointment Management: Create, update, and delete appointments. Track appointment details such as date, time, patient information, and assigned staff.
+- Patient Management: Maintain patient records including personal information, medical history, and contact details. Easily search and retrieve patient information.
+- Department Management: Manage different departments within the clinic. Add, edit, and delete departments based on the clinic's needs.
+- User Roles and Permissions: Assign different roles to staff members and define their permissions. Control access to specific features and functionalities based on user roles.
+- Dashboard and Reporting: View informative dashboards with key metrics and generate reports on appointment statistics, patient demographics, and department performance.
+- Notifications and Reminders: Send automated notifications and reminders to patients and staff members for upcoming appointments and important updates.
+- (soon) Integration with External Systems: Integrate with external systems such as payment gateways, electronic medical record systems, or laboratory systems to streamline workflows and enhance efficiency.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Technologies Used
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Laravel: A popular PHP framework used for building web applications. Provides a robust foundation for developing secure and scalable applications.
+- MySQL: A relational database management system for storing and retrieving data efficiently.
+- Laravel Passport: A Laravel package used for API authentication, enabling secure access to the application's endpoints.
+- PHPUnit: A testing framework for PHP used for writing and executing unit tests to ensure the application's functionality is working as expected.
 
-## Learning Laravel
+## Installation
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1. Clone the repository: "git clone git@github.com:khaledsawan/Clinic-Backend-Apis.git"
+2. Install the dependencies using Composer: "composer install" or "composer update"
+3. Create a copy of the `.env.example` file and rename it to `.env`. Update the database and other configuration settings in the `.env` file.
+4. Generate the application key: "php artisan key:generate"
+5. Run the database migrations: "php artisan migrate"
+6. Run project: "php artisan serve"
